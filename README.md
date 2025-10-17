@@ -3,33 +3,34 @@ Institutional optimization against Type 1 errors has exploded Type 2 problem spa
 
 ## Overview
 
-This repository documents systematic conservative bias in climate change predictions through analysis of 272 empirical observations comparing forecasted versus actual outcomes across multiple domains: atmospheric science, ocean dynamics, biosphere changes, societal impacts, and more.
+This is the code repository and source/bibliography back up for an analysis of systematic conservative bias.  The core metric being tracked is published forecast vs empirical observation, using lower bounds.  There are 11 domains under analysis, mostly climate and earth sciences, but also health, governments, biosphere, pollution, etc.  There are 272 data sources in the main set all from major scientific journals, government agencies, and a few NGOs/ancillary sources.  There is also a prediction tracker and list of new sources that will be updated as the situation evolves.  
+
+The main project - Collapsing Now, is hosted at substack https://substack.com/@johnnysilverhands but I will update here as possible to provide as long lasting a record as possible.  Mechanistic pathways and multi-domain narrative synthesis is provided there.
+
+Sources can be downloaded from https://archive.org/details/collapsing-now-300-documents-theory
 
 ## Key Findings
 
 ### Bias Drift Over Time
 
-![Bias Drift Over Time](bias-drift-chart.png)
+!(bias-drift-chart.png)
 
 **Summary Statistics:**
-- **Average bias magnitude**: 205.5%
-- **Median bias magnitude**: 60%
 - **Events occurring faster than predicted**: 113 (41.5%)
 - **Events worse than predicted**: 230 (84.6%)
 - **High transformative significance (3-4 rating)**: 148 (54.4%)
 
 **Trend Analysis:**
-The chart above reveals concerning patterns:
 - **Median bias** has remained relatively stable (40-100%), suggesting consistent underestimation
-- **Mean bias** shows extreme volatility, spiking to nearly 300% in 2025
-- The divergence between mean and median indicates an increasing frequency of extreme bias events
-- Conservative predictions are systematically failing to capture acceleration in climate impacts
+- **Mean bias** shows extreme volatility growing in 22/23 and spiking to nearly 300% in 2025
+- The divergence between mean and median indicates an increasing frequency of extreme bias events, also known as 'fat tail' outcomes
+- Conservative predictions are systematically failing to capture nonlinear accelerations in assessed systems
 
 ## Dataset Structure
 
 ### File: `climate-bias-data.csv`
 
-**272 entries** documenting predictions vs. observations across 8 categories:
+**272 entries** documenting predictions vs. observations:
 
 | Column | Description |
 |--------|-------------|
@@ -65,6 +66,8 @@ The chart above reveals concerning patterns:
 
 ## Methodology
 
+Studies are all collected from either major journals, arxiv, or government websites all within the last 5 years.  Documents ARE selected generally for worse/faster outcomes - the problem isn't what percentage of all papers suggest a bias, the problem is why do this many sources exist that suggest >60% worse/faster outcomes than mainstream forecasts?  Why do these documents individually suggest overturning existing assumptions and yet also do not consider one another?  It's not just EEI being assessed wrong means worse outcomes, it's that if EEI is wrong many predictions made for 2050 might actually happen sooner.
+
 ### Bias Calculation
 
 Bias percentage calculated as:
@@ -86,13 +89,16 @@ Bias % = |(Predicted Date - Actual Date) / Time Since Prediction| × 100%
 
 ## Notable Patterns
 
-### Systematic Underestimation
+### Systematic Underestimation / Interaction examples
 
-1. **Atmospheric warming**: 2°C milestone predicted for 2040-2050, observations suggest 2026-2029 (70%+ bias)
-2. **Ocean heat content**: Earth Energy Imbalance (EEI) 2x higher than CMIP6 projections (100% bias)
-3. **Methane emissions**: Arctic releases discovered decades ahead of schedule (280% bias)
-4. **Ecosystem collapse**: Insect populations declining 2-5% annually vs. predicted 1-2% (100% bias)
-5. **AMOC collapse**: Probability before 2050 now 50-90% vs. "unlikely before 2100" (200+ years bias)
+1. **Atmospheric warming**: Black swan and 1/10,000 year events have been misassessed and are likely much more likely.  12 months of 2C surface anomaly increasingly likely before 2030
+2. **Ocean heat content**: Earth Energy Imbalance (EEI) likely much (100%+) higher than IPCC assessments.  2023 heat anomaly persisting despite double la nina + record PDO
+3. **Methane emissions**: Antarctica methane hydrate emissions to air once assumed to not begin before 2100, instead happening now.  5+ regions current venting to air, meaning new forcing unfactored in all current projections
+4. **Regional heating**: Africa, India, the Middle East, Europe all heating at increased rates, with nonlinear wet bulb events now increasingly possible
+5. **Ecosystem collapse**: Insect populations declining 2-5% annually.  Protected and untouched environments degrading as fast as urban ones.
+6. **Chemical combinations**: PFOS/PFAS + microplastics/nanoplastics have 100% synergistic effects.  Plastic production is exponential, but so is fragmentation of nanoplastics = hyperbolic exposure rates
+7. **AMOC collapse**: IPCC assumes not before 2100, maybe be >15% reduced now, with SMOC salinity 'regime shift' since 2015.
+8. **Human health**: Maternal heat exposure + weather stress/hurricane exposure = synergestic effect on fetal development.  Heat threshholds mean nonlinear growth in sleep apnea, anxiety, multiple other conditions.
 
 ### Categories with Highest Bias
 
@@ -100,15 +106,19 @@ Bias % = |(Predicted Date - Actual Date) / Time Since Prediction| × 100%
 - **Cryosphere changes**: Mean bias 160%
 - **Chemical/pollution impacts**: Mean bias 180%
 
+## Prediction Tracker
+
+To track accuracy of project, prescriptive extrapolations given.  If bias assessment is right we should be able to quantify and correct for 'more' accuracy than default.  180+ predictions given and tracked.  New source list also provided.
+
 ## Usage
 
 ### Downloading the Data
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/climate-bias-analysis.git
+git clone https://github.com/johnnysilverhands-src/conservative-bias-tracker.git
 
 # Navigate to directory
-cd climate-bias-analysis
+cd climate-bias-tracker
 ```
 
 ### Basic Analysis (Python)
@@ -162,11 +172,12 @@ Conservative bias in climate science creates a **false sense of security**:
 - Underestimation of cascading risks
 - Delayed emergency response mechanisms
 
+- MOST IMPORTANTLY - Cascade is already underway.  Events put into 'the future' are CURRENT/NOW concerns.  Immediate response necessary.
+
 ## Limitations
 
-- **Selection bias**: Focus on cases where bias exists
+- **Selection bias**: Focus on cases where bias exists - but of note, even if all sources are wrong, why are there so many of them?  That would imply significant error in peer-review process itself given these are observational studies.
 - **Measurement uncertainty**: Some bias calculations involve estimates
-- **Publication lag**: Recent events may not yet have peer-reviewed analysis
 - **Complexity**: Interconnected systems resist simple bias calculations
 
 ## Contributing
@@ -176,23 +187,6 @@ Contributions welcome! Please:
 2. Include bias calculation methodology
 3. Note any uncertainties or limitations
 4. Cross-reference with independent sources for high-impact claims
-
-## Citation
-
-If you use this dataset, please cite:
-```
-[Your Name]. (2025). Climate Prediction Bias Analysis: Systematic Documentation 
-of Conservative Bias in Climate Science (2018-2025). GitHub. 
-https://github.com/yourusername/climate-bias-analysis
-```
-
-## License
-
-[Choose appropriate license - MIT, CC BY 4.0, etc.]
-
-## Contact
-
-[Your contact information or preferred communication method]
 
 ---
 

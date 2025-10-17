@@ -29,7 +29,7 @@ Sources can be downloaded from https://archive.org/details/collapsing-now-300-do
 ## Dataset Structure
 
 ### File: `climate-bias-data.csv`
-![Base Data](climate-bias-data.csv)
+**[View full dataset →](climate-bias-data.csv)**
 
 **272 entries** documenting predictions vs. observations:
 

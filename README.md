@@ -42,7 +42,7 @@ Sources can be downloaded from https://archive.org/details/collapsing-now-300-do
 | Priority Level | Importance for synthesis document |
 | New or Key Facts | Novel information discovered |
 | Difference from previous assessment | How this updates prior understanding |
-| Magnitude of bias | `|(forecasted - updated)/forecasted| × 100%` |
+| Magnitude of bias | `abs(forecasted - updated)/forecasted × 100%` |
 | Bias rating discussion | Context for the bias calculation |
 | Faster? | TRUE if event occurred faster than predicted |
 | Worse? | TRUE if outcome exceeded predictions |

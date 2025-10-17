@@ -13,7 +13,7 @@ Sources can be downloaded from https://archive.org/details/collapsing-now-300-do
 
 ### Bias Drift Over Time
 
-!(bias-drift-chart.png)
+![Bias Drift Over Time](bias-drift-chart.png)
 
 **Summary Statistics:**
 - **Events occurring faster than predicted**: 113 (41.5%)
@@ -29,6 +29,7 @@ Sources can be downloaded from https://archive.org/details/collapsing-now-300-do
 ## Dataset Structure
 
 ### File: `climate-bias-data.csv`
+![Base Data](climate-bias-data.csv)
 
 **272 entries** documenting predictions vs. observations:
 

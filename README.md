@@ -194,6 +194,6 @@ Contributions welcome! Please:
 
 ---
 
-**Last Updated**: [Current Date]  
-**Dataset Version**: 1.0  
-**Total Entries**: 272
+**Last Updated**: [1/22/26]  
+**Dataset Version**: 1.1  
+**Total Entries**: 397

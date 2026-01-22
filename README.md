@@ -1,3 +1,6 @@
+1/22/2026
+Updated with 2nd CDI, independent replication 83%/355%
+
 # conservative-bias-tracker
 Institutional optimization against Type 1 errors has exploded Type 2 problem space.  Unassessed multi-domain interactions have hidden an ongoing cascade in earth and human systems.  Bias assessment of empirical observation vs institutional/theoretical forecasts reveals a consistent normalcy bias and emerging compounding accelerations.
 
